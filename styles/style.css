@@ -109,4 +109,34 @@ hr {
 .fa-star.empty {
     color: #aeaeae;
 }
+/* media query */
+/* Mobile Devices */
+@media only screen and (max-width: 688px){
+    .container {
+        width: 100%;
+    }
+    .players, .blogs, .courses{
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+    }
+    .player, .blog, .course{
+        flex-direction: column;
+    }
+}
+/* Tablet Devices */
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+    .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
